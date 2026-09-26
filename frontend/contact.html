@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — GreenTrack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="widget.css">
+</head>
+<body>
+
+<div class="journal">
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark"><img src="assets/logo-icon.png" alt="GreenTrack logo" class="brand-mark-img"></div>
+      <div class="brand-name">green<span>track</span>.</div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="stories.html?cat=farmers">Farmers</a>
+      <a href="features.html">Technology</a>
+      <a href="gallery.html">Field Gallery</a>
+      <a href="team.html">Newsroom</a>
+    </nav>
+    <a href="download.html" class="nav-cta">Download App</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="crumb wrap"><a href="index.html">Home</a> / Contact</div>
+
+<section class="art-head wrap-narrow reveal">
+  <span class="eyebrow">Letters to the Editors</span>
+  <h1>Talk to the GreenTrack Team</h1>
+  <p class="dek">Questions about the app, a partnership, or a batch that isn't scanning right — write in.</p>
+</section>
+
+<section class="grid-section cols-2 wrap reveal" style="border-top:3px solid var(--charcoal); margin-top:20px;">
+  <div class="grid-col">
+    <span class="eyebrow" style="display:block; margin-bottom:14px;">Send a Letter</span>
+    <form class="letter-form" onsubmit="event.preventDefault(); this.reset(); alert('Thanks — we will be in touch.');">
+      <div class="form-row">
+        <label for="c-name">Your Name</label>
+        <input id="c-name" type="text" required>
+      </div>
+      <div class="form-row">
+        <label for="c-email">Email Address</label>
+        <input id="c-email" type="email" required>
+      </div>
+      <div class="form-row">
+        <label for="c-subject">Subject</label>
+        <input id="c-subject" type="text">
+      </div>
+      <div class="form-row">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="letter-submit">Send Message</button>
+    </form>
+  </div>
+  <div class="grid-col">
+    <span class="eyebrow" style="display:block; margin-bottom:14px;">Reach Us Directly</span>
+    <ul class="contact-info-list">
+      <li><b>Email</b><a href="mailto:greentracck@gmail.com">greentracck@gmail.com</a></li>
+      <li><b>Phone</b><a href="tel:+254700110527">0700 110 527</a></li>
+      <li><b>WhatsApp</b><a href="https://wa.me/254700110527" target="_blank" rel="noopener">Chat with us directly</a></li>
+      <li><b>Based in</b><span>Nairobi, Kenya</span></li>
+      <li><b>Response time</b><span>Within a day or so</span></li>
+    </ul>
+    <p style="border-left:2px solid var(--gold); padding-left:16px; font-size:13.5px; color:var(--charcoal-soft); line-height:1.65; margin-top:26px;">
+      Prefer something faster? Use the chat bubble in the bottom-right corner of any page — it's forwarded to WhatsApp right away.
+    </p>
+  </div>
+</section>
+
+<footer id="contact-footer" style="margin-top:20px;">
+  <div class="footer-grid">
+    <div class="footer-brand reveal">
+      <div class="brand">
+        <div class="brand-mark"><img src="assets/logo-icon.png" alt="GreenTrack logo" class="brand-mark-img"></div>
+        <div class="brand-name">green<span>track</span>.</div>
+      </div>
+      <p>Cultivating conscious consumption — one verified batch at a time.</p>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="stories.html">Stories</a>
+      <a href="about.html">The Journey</a>
+      <a href="download.html">Download</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Get in touch</h4>
+      <a href="contact.html">Contact form →</a>
+      <a href="mailto:greentracck@gmail.com">greentracck@gmail.com</a>
+      <a href="https://wa.me/254700110527" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 GreenTrack. All rights reserved.</span>
+    <span>Nairobi, Kenya</span>
+  </div>
+</footer>
+
+</div>
+
+<script src="env.js"></script>
+<script src="main.js"></script>
+<script src="widget.js"></script>
+
+</body>
+</html>

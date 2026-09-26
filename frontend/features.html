@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features — GreenTrack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="widget.css">
+</head>
+<body>
+
+<div class="journal">
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark"><img src="assets/logo-icon.png" alt="GreenTrack logo" class="brand-mark-img"></div>
+      <div class="brand-name">green<span>track</span>.</div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="stories.html?cat=farmers">Farmers</a>
+      <a href="features.html" class="active">Technology</a>
+      <a href="gallery.html">Field Gallery</a>
+      <a href="team.html">Newsroom</a>
+    </nav>
+    <a href="download.html" class="nav-cta">Download App</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="crumb wrap"><a href="index.html">Home</a> / Features</div>
+
+<section class="art-head wrap-narrow reveal">
+  <span class="eyebrow">Everything in the App</span>
+  <h1>Between a Seed and a Receipt</h1>
+  <p class="dek">Built for the grower's plot and the diner's table — with one record connecting them.</p>
+</section>
+
+<!-- ============ FEATURE SPEC LIST ============ -->
+<section class="wrap-narrow reveal" style="padding-bottom:20px;">
+  <div class="spec-list">
+    <div class="spec-row">
+      <span class="spec-no">01</span>
+      <h3>Plot Management</h3>
+      <p>Pin every plot by GPS and keep planting, spacing, and soil notes attached to the exact spot.</p>
+    </div>
+    <div class="spec-row">
+      <span class="spec-no">02</span>
+      <h3>Irrigation Log</h3>
+      <p>Record water source and timing in a tap, and let the app schedule the next round for you.</p>
+    </div>
+    <div class="spec-row">
+      <span class="spec-no">03</span>
+      <h3>Weather Insight</h3>
+      <p>Local rainfall and wind data translated into what it actually means for this week's planting.</p>
+    </div>
+    <div class="spec-row">
+      <span class="spec-no">04</span>
+      <h3>Pest Diagnosis</h3>
+      <p>Photograph an affected leaf and get a matched pest ID with the right treatment and dose.</p>
+    </div>
+    <div class="spec-row">
+      <span class="spec-no">05</span>
+      <h3>Harvest Lock</h3>
+      <p>A pre-harvest interval countdown holds the harvest button until spray residue has fully cleared.</p>
+    </div>
+    <div class="spec-row">
+      <span class="spec-no">06</span>
+      <h3>Batch Tags</h3>
+      <p>Final weight logged, and the app auto-generates a QR tag ready to print onto the crate.</p>
+    </div>
+    <div class="spec-row">
+      <span class="spec-no">07</span>
+      <h3>Photo Diary</h3>
+      <p>A running visual record of every plant's progress, from seedling to fruiting.</p>
+    </div>
+    <div class="spec-row">
+      <span class="spec-no">08</span>
+      <h3>Yield Analytics</h3>
+      <p>Season totals measured against last year's harvest and your own goal, plot by plot.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCANNING SIDE ============ -->
+<section class="grid-section cols-2 wrap" style="border-top:3px solid var(--charcoal); margin-top:20px;">
+  <div class="grid-col reveal">
+    <span class="eyebrow">On the Other Side of the Tag</span>
+    <h2 style="font-family:var(--serif); font-weight:700; font-size:clamp(24px,2.8vw,34px); margin:14px 0 16px; color:var(--charcoal);">Scanning Is a Feature Too</h2>
+    <p style="font-size:15px; line-height:1.75; color:var(--charcoal-soft); margin:0 0 24px;">No login, no app required to verify a batch — anyone can scan a tag on a shelf, a crate, or a menu and see the same record the grower built.</p>
+    <div class="spec-list" style="border-top:1px solid var(--charcoal);">
+      <div class="spec-row" style="grid-template-columns:40px 1fr;">
+        <span class="spec-no">01</span>
+        <div><h3 style="font-size:16px; margin-bottom:4px;">Farm of Origin</h3><p style="font-size:13.5px;">Exactly which plot and grower this batch came from.</p></div>
+      </div>
+      <div class="spec-row" style="grid-template-columns:40px 1fr;">
+        <span class="spec-no">02</span>
+        <div><h3 style="font-size:16px; margin-bottom:4px;">Harvest Timestamp</h3><p style="font-size:13.5px;">When it was picked, not just when it arrived on a shelf.</p></div>
+      </div>
+      <div class="spec-row" style="grid-template-columns:40px 1fr;">
+        <span class="spec-no">03</span>
+        <div><h3 style="font-size:16px; margin-bottom:4px;">Treatment History</h3><p style="font-size:13.5px;">Any pesticide used, and confirmation the safety interval was cleared.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-col reveal">
+    <div class="device-cluster">
+      <div class="phone d1"><img src="assets/crops.jpeg" alt="GreenTrack crop list"></div>
+      <div class="phone d2"><img src="assets/app-role-menu.jpg" alt="GreenTrack role menu — Farmer, Grocery Shopper, Chef, Diner"></div>
+      <div class="phone d3"><img src="assets/dashboard.jpeg" alt="GreenTrack dashboard"></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap reveal" style="text-align:center; padding:50px 0 60px;">
+  <a href="download.html" class="btn-read">Get GreenTrack →</a>
+</section>
+
+<footer id="contact-footer">
+  <div class="footer-grid">
+    <div class="footer-brand reveal">
+      <div class="brand">
+        <div class="brand-mark"><img src="assets/logo-icon.png" alt="GreenTrack logo" class="brand-mark-img"></div>
+        <div class="brand-name">green<span>track</span>.</div>
+      </div>
+      <p>Cultivating conscious consumption — one verified batch at a time.</p>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="stories.html">Stories</a>
+      <a href="about.html">The Journey</a>
+      <a href="download.html">Download</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Get in touch</h4>
+      <a href="contact.html">Contact form →</a>
+      <a href="mailto:greentracck@gmail.com">greentracck@gmail.com</a>
+      <a href="https://wa.me/254700110527" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 GreenTrack. All rights reserved.</span>
+    <span>Nairobi, Kenya</span>
+  </div>
+</footer>
+
+</div>
+
+<script src="env.js"></script>
+<script src="main.js"></script>
+<script src="widget.js"></script>
+
+</body>
+</html>

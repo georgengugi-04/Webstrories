@@ -1,0 +1,55 @@
+// GreenTrack backend — database schema
+// Run: npx prisma migrate dev --name init   (locally)
+//      npx prisma migrate deploy            (on Railway)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// One row per chat message sent through the site's floating chat widget.
+// "user" messages come from a site visitor; "team" messages are replies
+// you send back (e.g. typed into Notion or a future admin reply endpoint).
+model ChatMessage {
+  id             String   @id @default(cuid())
+  sessionId      String
+  sender         String // "user" | "team"
+  name           String?
+  email          String?
+  body           String   @db.Text
+  whatsappStatus String? // "sent" | "failed" | "skipped"
+  createdAt      DateTime @default(now())
+
+  @@index([sessionId])
+}
+
+// One row per GitHub webhook delivery (push, pull_request, issues, star...).
+model GithubEvent {
+  id        String   @id @default(cuid())
+  eventType String
+  repo      String
+  actor     String?
+  summary   String   @db.Text
+  url       String?
+  payload   Json
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+// Local cache of items pulled from (and pushed to) a Notion database, so the
+// site's "Workspace" tab can render instantly without hitting Notion's API
+// on every page view.
+model NotionItem {
+  id           String    @id @default(cuid())
+  notionPageId String    @unique
+  title        String
+  status       String?
+  url          String?
+  lastEditedAt DateTime?
+  syncedAt     DateTime  @default(now())
+}

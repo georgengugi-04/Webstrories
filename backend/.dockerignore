@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log*
+
+# Never send real secrets into a Docker build context.
+.env
+.env.local
+.env.*.local
+
+.git
+.gitignore
+.DS_Store
+README.md
+
+# Local Prisma dev artifacts (SQLite, migration scratch files) shouldn't
+# ship in the image — migrations run against the real DATABASE_URL instead.
+prisma/dev.db
+prisma/migrations/.tmp

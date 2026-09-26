@@ -1,0 +1,10 @@
+# Keeps the Docker build context small and fast — this does NOT control
+# what gets served (the Dockerfile copies *.html/*.css/*.js/assets/
+# explicitly), it just keeps junk out of what's sent to the Docker daemon.
+.git
+.gitignore
+node_modules
+.DS_Store
+*.log
+README.md
+docker-compose*.yml

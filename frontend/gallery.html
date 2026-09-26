@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Field Gallery — GreenTrack Journal</title>
+<meta name="description" content="A documentary photo archive from GreenTrack's field research around Subukia, Kenya — farmers, crops, and the app in the field. Interviewer and field photography: George Ngugi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="widget.css">
+</head>
+<body>
+<div class="journal">
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <div class="brand-mark"><img src="assets/logo-icon.png" alt="GreenTrack logo" class="brand-mark-img"></div>
+      <div class="brand-name">green<span>track</span>.</div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="stories.html?cat=farmers">Farmers</a>
+      <a href="features.html">Technology</a>
+      <a href="gallery.html">Field Gallery</a>
+      <a href="team.html">Newsroom</a>
+    </nav>
+    <a href="download.html" class="nav-cta">Download App</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- ============ GALLERY HERO ============ -->
+<section class="field-hero wrap">
+  <div class="field-hero-top reveal">
+    <span class="eyebrow">The Field Gallery</span>
+    <h1>Every voice, <em>documented</em>.</h1>
+    <p>A photo archive from GreenTrack's field research around Subukia, Kenya — farmers, crops, market days, and the app itself, tested in the hands of the people it's built for. Every photograph here is real field documentation, not stock photography.</p>
+  </div>
+  <div class="field-hero-photo reveal">
+    <img src="assets/field/john-portrait.jpg" alt="John Maina, farmer, among his maize crop, Subukia">
+    <div class="field-hero-credit">
+      <span class="who">Interviewer &amp; Field Photography — <b>George Ngugi</b></span>
+      <span class="loc">GreenTrack Field Research · Subukia, Kenya</span>
+    </div>
+  </div>
+</section>
+
+<div class="art-topbar wrap-narrow">
+  <div class="row">
+    <a href="stories.html">← Back to the Journal</a>
+    <span id="galleryCount">— photographs</span>
+  </div>
+</div>
+
+<div class="method-note reveal wrap-narrow" style="margin-top:0;">
+  <b>How this archive works.</b> Every person documented here reviewed and signed a written consent form before being photographed or interviewed. Full stories exist for the farmers we spoke with at length — Erah Chomba, Jonathan Chomba and John Maina. Everyone else pictured is presented honestly, with only what the photograph itself shows — no invented names, roles or quotes.
+</div>
+
+<!-- ============ FILTERS ============ -->
+<nav class="filters wrap" id="galleryFilters">
+  <button class="filter-btn active" data-filter="all">All Photographs</button>
+  <button class="filter-btn" data-filter="erah">Erah Chomba</button>
+  <button class="filter-btn" data-filter="jonathan">Jonathan Chomba</button>
+  <button class="filter-btn" data-filter="john">John Maina</button>
+  <button class="filter-btn" data-filter="grace">Grace Wanjeri</button>
+  <button class="filter-btn" data-filter="notebook">Field Notebook</button>
+  <button class="filter-btn" data-filter="app">GreenTrack, in the Field</button>
+</nav>
+
+<!-- ============ MASONRY GALLERY ============ -->
+<section class="wrap reveal" style="padding-top:8px;">
+  <div class="field-gallery" id="galleryGrid">
+
+    <!-- ERAH CHOMBA -->
+    <div class="fg-item" data-person="erah"><button class="fg-btn" data-full="assets/field/erah-portrait.jpg" data-cap="George Ngugi with grower Erah Chomba, following her interview and consent for documentation — Subukia" aria-label="Expand photo"></button><img src="assets/field/erah-portrait.jpg" alt="George Ngugi with grower Erah Chomba, Subukia" loading="lazy"><span class="fg-cap">Erah Chomba, grower — with George Ngugi</span></div>
+
+    <div class="fg-item" data-person="erah"><button class="fg-btn" data-full="assets/field/erah-consent.jpg" data-cap="Erah Chomba signing the written consent form for documentation, before her interview" aria-label="Expand photo"></button><img src="assets/field/erah-consent.jpg" alt="Erah Chomba signing a written consent form for documentation" loading="lazy"><span class="fg-cap">Signing consent for documentation</span></div>
+
+    <div class="fg-item" data-person="erah"><button class="fg-btn" data-full="assets/field/erah-seedling.jpg" data-cap="A young spinach seedling on Erah Chomba's plot, Subukia" aria-label="Expand photo"></button><img src="assets/field/erah-seedling.jpg" alt="A young spinach seedling, Subukia" loading="lazy"><span class="fg-cap">Spinach, early growth — Erah's plot</span></div>
+
+    <div class="fg-item" data-person="erah"><button class="fg-btn" data-full="assets/field/erah-harvest.jpg" data-cap="Working the spinach beds during the field visit, Subukia" aria-label="Expand photo"></button><img src="assets/field/erah-harvest.jpg" alt="Harvesting spinach, Subukia" loading="lazy"><span class="fg-cap">Working the spinach beds</span></div>
+
+    <!-- JONATHAN CHOMBA -->
+    <div class="fg-item" data-person="jonathan"><button class="fg-btn" data-full="assets/field/jonathan-portrait.jpg" data-cap="Jonathan Chomba, coffee farmer, on his plot in Subukia" aria-label="Expand photo"></button><img src="assets/field/jonathan-portrait.jpg" alt="Jonathan Chomba, coffee farmer, Subukia" loading="lazy"><span class="fg-cap">Jonathan Chomba, coffee farmer</span></div>
+
+    <div class="fg-item" data-person="jonathan"><button class="fg-btn" data-full="assets/field/coffee-field-wide.jpg" data-cap="A wide view of Jonathan Chomba's coffee plot in Subukia" aria-label="Expand photo"></button><img src="assets/field/coffee-field-wide.jpg" alt="Wide view of a coffee plot, Subukia" loading="lazy"><span class="fg-cap">Coffee rows, Subukia</span></div>
+
+    <div class="fg-item" data-person="jonathan"><button class="fg-btn" data-full="assets/field/coffee-cherries-1.jpg" data-cap="Coffee cherries at different stages of ripeness on the same branch, Subukia" aria-label="Expand photo"></button><img src="assets/field/coffee-cherries-1.jpg" alt="Coffee cherries ripening, Subukia" loading="lazy"><span class="fg-cap">Cherries ripening unevenly, same branch</span></div>
+
+    <div class="fg-item" data-person="jonathan"><button class="fg-btn" data-full="assets/field/coffee-cherries-2.jpg" data-cap="Jonathan Chomba working among his coffee trees, Subukia" aria-label="Expand photo"></button><img src="assets/field/coffee-cherries-2.jpg" alt="Jonathan Chomba working among coffee trees, Subukia" loading="lazy"><span class="fg-cap">Jonathan, working the rows</span></div>
+
+    <div class="fg-item" data-person="jonathan"><button class="fg-btn" data-full="assets/field/coffee-cherries-3.jpg" data-cap="Close view of ripening coffee cherries on Jonathan's plot" aria-label="Expand photo"></button><img src="assets/field/coffee-cherries-3.jpg" alt="Close view of coffee cherries, Subukia" loading="lazy"><span class="fg-cap">Jonathan's coffee plot, Subukia</span></div>
+
+    <div class="fg-item" data-person="jonathan"><button class="fg-btn" data-full="assets/field/jonathan-portrait.jpg" data-cap="Jonathan Chomba, coffee farmer, on his plot in Subukia" aria-label="Expand photo"></button><img src="assets/field/jonathan-portrait.jpg" alt="Jonathan Chomba, coffee farmer, Subukia" loading="lazy"><span class="fg-cap">Jonathan, among his coffee trees</span></div>
+
+    <!-- JOHN MAINA -->
+    <div class="fg-item" data-person="john"><button class="fg-btn" data-full="assets/field/john-portrait.jpg" data-cap="John Maina, farmer, among his maize crop, Subukia" aria-label="Expand photo"></button><img src="assets/field/john-portrait.jpg" alt="John Maina, farmer, among his maize crop, Subukia" loading="lazy"><span class="fg-cap">John Maina, among his maize</span></div>
+
+    <div class="fg-item" data-person="john"><button class="fg-btn" data-full="assets/field/john-banana.jpg" data-cap="John Maina beneath his banana tree, heavy with a full bunch, Subukia" aria-label="Expand photo"></button><img src="assets/field/john-banana.jpg" alt="John Maina beneath his banana tree, Subukia" loading="lazy"><span class="fg-cap">John, beneath his banana tree</span></div>
+
+    <div class="fg-item" data-person="john"><button class="fg-btn" data-full="assets/field/john-ginger.jpg" data-cap="Ginger foliage on John Maina's plot, Subukia" aria-label="Expand photo"></button><img src="assets/field/john-ginger.jpg" alt="Ginger growing on John Maina's plot, Subukia" loading="lazy"><span class="fg-cap">Ginger, growing low among the maize</span></div>
+
+    <div class="fg-item" data-person="john"><button class="fg-btn" data-full="assets/field/john-ginger-2.jpg" data-cap="John Maina examining his ginger crop, Subukia" aria-label="Expand photo"></button><img src="assets/field/john-ginger-2.jpg" alt="John Maina examining his ginger crop, Subukia" loading="lazy"><span class="fg-cap">John, checking the ginger</span></div>
+
+    <div class="fg-item" data-person="john"><button class="fg-btn" data-full="assets/field/john-plot.jpg" data-cap="Bean seedlings intercropped on John Maina's plot, Subukia" aria-label="Expand photo"></button><img src="assets/field/john-plot.jpg" alt="Intercropped seedlings, Subukia" loading="lazy"><span class="fg-cap">Intercropped seedlings, same plot</span></div>
+
+    <!-- GRACE WANJERI -->
+    <div class="fg-item" data-person="grace"><button class="fg-btn" data-full="assets/field/grace-portrait.jpg" data-cap="Grace Wanjeri, produce trader, at her stall, Subukia" aria-label="Expand photo"></button><img src="assets/field/grace-portrait.jpg" alt="Grace Wanjeri, produce trader, at her stall, Subukia" loading="lazy"><span class="fg-cap">Grace Wanjeri, at her stall</span></div>
+
+    <div class="fg-item" data-person="grace"><button class="fg-btn" data-full="assets/field/grace-with-george.jpg" data-cap="George Ngugi with Grace Wanjeri, following her interview, Subukia" aria-label="Expand photo"></button><img src="assets/field/grace-with-george.jpg" alt="George Ngugi with Grace Wanjeri, Subukia" loading="lazy"><span class="fg-cap">Grace Wanjeri, with George Ngugi</span></div>
+
+    <!-- FIELD NOTEBOOK -->
+    <div class="fg-item" data-person="notebook"><button class="fg-btn" data-full="assets/field/crop-officer.jpg" data-cap="George Ngugi meeting with a Sub-County horticulture officer as part of GreenTrack's field research" aria-label="Expand photo"></button><img src="assets/field/crop-officer.jpg" alt="George Ngugi with a Sub-County horticulture officer, field research" loading="lazy"><span class="fg-cap">A visit to the Sub-County horticulture office</span></div>
+
+    <div class="fg-item" data-person="notebook"><button class="fg-btn" data-full="assets/field/researcher-george.jpg" data-cap="George Ngugi, field researcher and product developer for GreenTrack" aria-label="Expand photo"></button><img src="assets/field/researcher-george.jpg" alt="George Ngugi, field researcher, Subukia" loading="lazy"><span class="fg-cap">George Ngugi, in the field</span></div>
+
+    <!-- APP IN THE FIELD -->
+    <div class="fg-item" data-person="app"><button class="fg-btn" data-full="assets/field/app-pestscan.jpg" data-cap="GreenTrack's quick-actions screen, including AI pest scan, shown during a field session" aria-label="Expand photo"></button><img src="assets/field/app-pestscan.jpg" alt="GreenTrack quick actions screen with AI pest scan" loading="lazy"><span class="fg-cap">Quick actions — AI pest scan</span></div>
+
+    <div class="fg-item" data-person="app"><button class="fg-btn" data-full="assets/field/app-cropbatch.jpg" data-cap="Logging a new spinach crop batch in GreenTrack, GPS-pinned, during the field session" aria-label="Expand photo"></button><img src="assets/field/app-cropbatch.jpg" alt="GreenTrack new crop batch screen, spinach" loading="lazy"><span class="fg-cap">Logging a batch, in the field</span></div>
+
+    <div class="fg-item" data-person="app"><button class="fg-btn" data-full="assets/field/app-home-spinach.jpg" data-cap="A grower's GreenTrack home dashboard, showing a spinach batch in progress" aria-label="Expand photo"></button><img src="assets/field/app-home-spinach.jpg" alt="GreenTrack home dashboard showing a spinach crop" loading="lazy"><span class="fg-cap">A grower's dashboard, mid-season</span></div>
+
+  </div>
+</section>
+
+<!-- ============ RESEARCHER PROFILE ============ -->
+<section class="wrap reveal" id="researcher" style="padding-top:44px; border-top:1px solid var(--rule);">
+  <div class="researcher-block">
+    <div class="researcher-photo"><img src="assets/field/researcher-george.jpg" alt="George Ngugi, software developer and field researcher for GreenTrack"></div>
+    <div class="researcher-body">
+      <h3>George Ngugi</h3>
+      <span class="researcher-role">Software Developer · Field Researcher · Product Builder</span>
+      <p>George combines software development with direct field research to understand real-world problems before building technology to address them. Every photograph in this archive was taken, and every interview conducted, on visits he made himself around Subukia — the same fieldwork that continues to shape what GreenTrack builds next.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="fieldLightbox" role="dialog" aria-modal="true" aria-label="Expanded field photograph">
+  <button class="lb-close" id="fieldLightboxClose" aria-label="Close photo">✕</button>
+  <div class="lightbox-inner">
+    <img id="fieldLightboxImg" src="" alt="">
+    <p class="lb-cap" id="fieldLightboxCap"></p>
+  </div>
+</div>
+
+<footer id="contact-footer" style="margin-top:60px;">
+  <div class="footer-grid">
+    <div class="footer-brand reveal">
+      <div class="brand">
+        <div class="brand-mark"><img src="assets/logo-icon.png" alt="GreenTrack logo" class="brand-mark-img"></div>
+        <div class="brand-name">green<span>track</span>.</div>
+      </div>
+      <p>Cultivating conscious consumption — one verified batch at a time.</p>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="stories.html">Stories</a>
+      <a href="about.html">The Journey</a>
+      <a href="download.html">Download</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Get in touch</h4>
+      <a href="contact.html">Contact form →</a>
+      <a href="mailto:greentracck@gmail.com">greentracck@gmail.com</a>
+      <a href="https://wa.me/254700110527" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 GreenTrack. All rights reserved.</span>
+    <span>Nairobi, Kenya</span>
+  </div>
+</footer>
+
+</div>
+
+<script src="env.js"></script>
+<script src="main.js"></script>
+<script>
+  // Lightbox
+  const lb = document.getElementById('fieldLightbox');
+  const lbImg = document.getElementById('fieldLightboxImg');
+  const lbCap = document.getElementById('fieldLightboxCap');
+  document.querySelectorAll('.fg-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      lbImg.src = btn.dataset.full;
+      lbImg.alt = btn.dataset.cap || '';
+      lbCap.textContent = btn.dataset.cap || '';
+      lb.classList.add('open');
+    });
+  });
+  function closeLightbox(){ lb.classList.remove('open'); lbImg.src = ''; }
+  document.getElementById('fieldLightboxClose').addEventListener('click', closeLightbox);
+  lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+  // Filter by person
+  const filterBtns = document.querySelectorAll('#galleryFilters .filter-btn');
+  const items = document.querySelectorAll('#galleryGrid .fg-item');
+  const countEl = document.getElementById('galleryCount');
+  function applyFilter(val, btn){
+    filterBtns.forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    let shown = 0;
+    items.forEach(el => {
+      if (val === 'all' || el.dataset.person === val) { el.classList.remove('is-hidden'); shown++; }
+      else { el.classList.add('is-hidden'); }
+    });
+    countEl.textContent = shown + (shown === 1 ? ' photograph' : ' photographs');
+  }
+  filterBtns.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter, btn)));
+  applyFilter('all', filterBtns[0]);
+</script>
+<script src="widget.js"></script>
+
+</body>
+</html>
